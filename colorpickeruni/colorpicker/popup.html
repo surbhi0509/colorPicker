@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+    type="text/css" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="left_btn">
+        <button class="pickcolor">
+          <i class="fa fa-spinner" aria-hidden="true"></i>
+        </button>
+
+        <div class="left">
+          <h1>Color Picker</h1>
+          <button class="changeColorBtn">
+            <p class="urlchange">&#x1F600;</p>
+            pick color
+          </button>
+        </div>
+        <div class="left1">
+        
+
+          <div class="" style="float: left; width: 128px">
+            <div class="" style="
+                  float: left;
+                  width: 130px;
+                  height: 150px;
+                  position: relative;
+                  margin-bottom: 8px;
+                ">
+              <div style="
+                    position: absolute;
+                    inset: 0px;
+                    background: rgb(255, 77, 0);
+                  ">
+                <div class="saturation-white">
+                  <div class="saturation-black"></div>
+                  <div style="
+                        position: absolute;
+                        top: 45%;
+                        left: 46.87%;
+                        cursor: default;
+                      ">
+                    <div class="boxpointer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div style="
+                  float: left;
+                  width: 128px;
+                  height: 14px;
+                  position: relative;
+                  margin-bottom: 8px;
+                ">
+              <div class="colorslider">
+                <div class="hue-horizontal">
+                  <div style="position: absolute; left: 5.02646%">
+                    <div class="colorpointer"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gradientslider">
+              <div class="gradientslider1">
+                <div class="gradientslider2">
+                  <div class="gradientslider3"></div>
+                </div>
+                <div  class="gradientslider4">
+                    </div>
+                <div class="gradientslider5">
+                  <div class="" style="position: absolute; left: 100%">
+                      <div class="gradient-slider"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="ColorPicker_InputBox">
+              <button class="ColorPicker_InputBox_Btn">Select</button>
+              <div style="
+                    position: relative;
+                    width: 66px;
+                    height: 25px;
+                    background: rgba(224, 225, 231, 0.2);
+                    border-radius: 8px;
+                  ">
+                <input id="rc-editable-input-1" spellcheck="false" value="#8C5E4B" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="right_btn">
+        <button class="choosecolor"></button>
+        <div class="right">
+          <p>New: <span class="colorvalue1"></span></p>
+          <div class="colorgrid">
+            <span class="colorvalue">hex:</span>
+            <span class="colorvalue2">RGB:</span>
+          </div>
+
+          <p>Picked: <span class="colorvaluePre"></span></p>
+          <div class="dataPre">
+            <span class="colorvalue_pre-hex"></span>
+            <span class="colorvalue_pre-rgb"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="previous">
+    <div class="dropdown">
+      <select name="default" id="default" style="background-color: aliceblue">
+        <option value="default">Default</option>
+      </select>
+      <span class="clear"><i class="fa fa-trash" aria-hidden="true"></i></span>
+      <span><i class="fa fa-download" aria-hidden="true"></i> </span>
+    </div>
+    <div class="perviouscolors" id="perviouscolors"></div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+
+</html>
